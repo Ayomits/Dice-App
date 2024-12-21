@@ -24,7 +24,7 @@ const rollingStore = useRollingStore();
 const rollingLogic = (_event: Event) => {
   loading.value = true;
   setTimeout(() => {
-    const randNumber = _.random(0, rollingStore.cubs * 6);
+    const randNumber = _.random(rollingStore.cubs, rollingStore.cubs * 6);
     loading.value = false;
     rollingStore.increment("attemps");
     rollingStore.set("number", randNumber);
