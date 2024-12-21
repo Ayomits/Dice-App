@@ -3,7 +3,7 @@
     class="flex flex-col sm:flex-row items-center justify-between max-w-[90%] lg:mx-0 sm:mx-auto p-4"
   >
     <HeaderLogo />
-    <History v-if="rollingState.attemps >= 1" />
+    <History />
   </div>
 </template>
 
